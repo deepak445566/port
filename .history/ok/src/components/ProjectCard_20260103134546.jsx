@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const ProjectCard = ({ project, index }) => {
+const PremiumProjectCard = ({ project, index }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -176,4 +176,4 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
-export default ProjectCard;
+export default PremiumProjectCard;

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const ProjectCard = ({ project, index }) => {
+const rojectCard = ({ project, index }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
