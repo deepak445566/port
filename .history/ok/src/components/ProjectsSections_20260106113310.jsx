@@ -46,10 +46,10 @@ const ProjectsSection = () => {
       progress: 100
     },
    {
-  id: 3,
+  id: 4,
   title: "Balloon Decor",
   description: "A vibrant and interactive frontend website for balloon decoration services, showcasing products, event packages, and booking options with modern UI and responsive design.",
-  image: "https://images.unsplash.com/photo-1604668915840-580c30026e5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFsbG9uJTIwZGVjb3JlfGVufDB8fDB8fHww",
+  image: "https://images.unsplash.com/photo-1582719478181-1f63b6c62225?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
   technologies: ["React", "Tailwind CSS", "Framer Motion", "React Router"],
   features: [
     "Event-wise Balloon Packages",
@@ -59,13 +59,13 @@ const ProjectsSection = () => {
     "Smooth Page Transitions & Hover Effects"
   ],
   category: "frontend",
-  liveUrl: "https://precious-elf-6c250a.netlify.app/",
+  liveUrl: "#",
   githubUrl: "#",
   status: "In Progress",
   rating: 4.5,
   progress: 70
 }
-,
+
     {
       id: 4,
       title: "Digital Agency Website",

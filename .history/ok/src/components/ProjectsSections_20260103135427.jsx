@@ -9,28 +9,20 @@ const ProjectsSection = () => {
 
   // Sample projects data
   const projects = [
-   {
-  id: 1,
-  title: "Agriculture E-commerce platform",
-  description: "A full-stack agriculture e-commerce platform with modern UI, cart functionality, payment integration, and an admin dashboard. Farmers and customers can buy, sell, and track agricultural products seamlessly.",
-  image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-  technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
-  features: [
-    "User Authentication (Farmer & Customer)",
-    "Admin Dashboard for Product & Order Management",
-    "Secure Payment Gateway Integration",
-    "Inventory & Category Management",
-    "Order Tracking & History",
-    "Product Ratings & Reviews"
-  ],
-  category: "mern",
-  liveUrl: "https://kloi-one.vercel.app/",
-  githubUrl: "#",
-  status: "Live",
-  rating: 4.8,
-  progress: 100
-}
-,
+    {
+      id: 1,
+      title: "Grocery Platform",
+      description: "Full-stack e-commerce solution with modern UI, cart functionality, payment integration, and admin dashboard.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "Tailwind", "JWT"],
+      features: ["User Authentication", "Admin Dashboard", "Payment Gateway", "Inventory Management"],
+      category: "mern",
+      liveUrl: "https://gro-livid.vercel.app/",
+      githubUrl: "#",
+      status: "Live",
+      rating: 4.8,
+      progress: 100
+    },
     {
       id: 2,
       title: "Social Media Platform",
@@ -45,27 +37,20 @@ const ProjectsSection = () => {
       rating: 4.5,
       progress: 100
     },
-   {
-  id: 3,
-  title: "Balloon Decor",
-  description: "A vibrant and interactive frontend website for balloon decoration services, showcasing products, event packages, and booking options with modern UI and responsive design.",
-  image: "https://images.unsplash.com/photo-1604668915840-580c30026e5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFsbG9uJTIwZGVjb3JlfGVufDB8fDB8fHww",
-  technologies: ["React", "Tailwind CSS", "Framer Motion", "React Router"],
-  features: [
-    "Event-wise Balloon Packages",
-    "Interactive Gallery & Animations",
-    "Booking Form & Contact Integration",
-    "Responsive & Mobile-Friendly UI",
-    "Smooth Page Transitions & Hover Effects"
-  ],
-  category: "frontend",
-  liveUrl: "https://precious-elf-6c250a.netlify.app/",
-  githubUrl: "#",
-  status: "In Progress",
-  rating: 4.5,
-  progress: 70
-}
-,
+    {
+      id: 3,
+      title: "Zerodha Clone",
+      description: "Modern trading platform interface with interactive charts, portfolio tracking, and responsive design.",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1065&q=80",
+      technologies: ["React", "Tailwind CSS", "Chart.js", "Recharts"],
+      features: ["Interactive Charts", "Portfolio Management", "Market Watch", "Responsive UI"],
+      category: "frontend",
+      liveUrl: "#",
+      githubUrl: "#",
+      status: "In Progress",
+      rating: 4.3,
+      progress: 85
+    },
     {
       id: 4,
       title: "Digital Agency Website",

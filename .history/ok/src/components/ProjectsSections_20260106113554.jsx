@@ -49,7 +49,7 @@ const ProjectsSection = () => {
   id: 3,
   title: "Balloon Decor",
   description: "A vibrant and interactive frontend website for balloon decoration services, showcasing products, event packages, and booking options with modern UI and responsive design.",
-  image: "https://images.unsplash.com/photo-1604668915840-580c30026e5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFsbG9uJTIwZGVjb3JlfGVufDB8fDB8fHww",
+  image: "",
   technologies: ["React", "Tailwind CSS", "Framer Motion", "React Router"],
   features: [
     "Event-wise Balloon Packages",

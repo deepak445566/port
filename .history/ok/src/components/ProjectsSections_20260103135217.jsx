@@ -9,28 +9,20 @@ const ProjectsSection = () => {
 
   // Sample projects data
   const projects = [
-   {
-  id: 1,
-  title: "Agriculture E-commerce platform",
-  description: "A full-stack agriculture e-commerce platform with modern UI, cart functionality, payment integration, and an admin dashboard. Farmers and customers can buy, sell, and track agricultural products seamlessly.",
-  image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
-  technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
-  features: [
-    "User Authentication (Farmer & Customer)",
-    "Admin Dashboard for Product & Order Management",
-    "Secure Payment Gateway Integration",
-    "Inventory & Category Management",
-    "Order Tracking & History",
-    "Product Ratings & Reviews"
-  ],
-  category: "mern",
-  liveUrl: "https://kloi-one.vercel.app/",
-  githubUrl: "#",
-  status: "Live",
-  rating: 4.8,
-  progress: 100
-}
-,
+    {
+      id: 1,
+      title: "Grocery Platform",
+      description: "Full-stack e-commerce solution with modern UI, cart functionality, payment integration, and admin dashboard.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      technologies: ["React", "Node.js", "MongoDB", "Tailwind", "JWT"],
+      features: ["User Authentication", "Admin Dashboard", "Payment Gateway", "Inventory Management"],
+      category: "mern",
+      liveUrl: "https://gro-livid.vercel.app/",
+      githubUrl: "#",
+      status: "Live",
+      rating: 4.8,
+      progress: 100
+    },
     {
       id: 2,
       title: "Social Media Platform",
@@ -45,27 +37,20 @@ const ProjectsSection = () => {
       rating: 4.5,
       progress: 100
     },
-   {
-  id: 3,
-  title: "Balloon Decor",
-  description: "A vibrant and interactive frontend website for balloon decoration services, showcasing products, event packages, and booking options with modern UI and responsive design.",
-  image: "https://images.unsplash.com/photo-1604668915840-580c30026e5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFsbG9uJTIwZGVjb3JlfGVufDB8fDB8fHww",
-  technologies: ["React", "Tailwind CSS", "Framer Motion", "React Router"],
-  features: [
-    "Event-wise Balloon Packages",
-    "Interactive Gallery & Animations",
-    "Booking Form & Contact Integration",
-    "Responsive & Mobile-Friendly UI",
-    "Smooth Page Transitions & Hover Effects"
-  ],
-  category: "frontend",
-  liveUrl: "https://precious-elf-6c250a.netlify.app/",
-  githubUrl: "#",
-  status: "In Progress",
-  rating: 4.5,
-  progress: 70
-}
-,
+    {
+      id: 3,
+      title: "Zerodha Clone",
+      description: "Modern trading platform interface with interactive charts, portfolio tracking, and responsive design.",
+      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1065&q=80",
+      technologies: ["React", "Tailwind CSS", "Chart.js", "Recharts"],
+      features: ["Interactive Charts", "Portfolio Management", "Market Watch", "Responsive UI"],
+      category: "frontend",
+      liveUrl: "#",
+      githubUrl: "#",
+      status: "In Progress",
+      rating: 4.3,
+      progress: 85
+    },
     {
       id: 4,
       title: "Digital Agency Website",
@@ -140,7 +125,7 @@ const ProjectsSection = () => {
             <div className="w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
           </div>
           
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent big">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent ">
             Featured Projects
           </h2>
           
@@ -150,6 +135,31 @@ const ProjectsSection = () => {
           </p>
         </motion.div>
 
+        {/* Stats Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12"
+        >
+          {[
+            { label: 'Total Projects', value: projects.length, icon: '📁' },
+            { label: 'Live Projects', value: projects.filter(p => p.status === 'Live').length, icon: '🚀' },
+            { label: 'Avg. Rating', value: '4.6/5.0', icon: '⭐' },
+            { label: 'Technologies', value: '12+', icon: '💻' }
+          ].map((stat, index) => (
+            <div key={index} className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="text-2xl font-bold text-gray-800">{stat.value}</div>
+                  <div className="text-sm text-gray-500 mt-1">{stat.label}</div>
+                </div>
+                <div className="text-2xl">{stat.icon}</div>
+              </div>
+            </div>
+          ))}
+        </motion.div>
 
         {/* Filter Section */}
         <motion.div
@@ -356,7 +366,44 @@ const ProjectsSection = () => {
           </motion.div>
         )}
 
-     
+        {/* CTA Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mt-16 pt-12 border-t border-gray-200"
+        >
+          <h3 className="text-3xl font-bold text-gray-800 mb-4">Want to see more?</h3>
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+            I'm constantly working on new projects and improving existing ones. 
+            Check out my GitHub profile for more code samples and upcoming projects.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#contact"
+              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-xl hover:shadow-xl hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Start a Project
+            </a>
+            
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-white text-gray-800 font-semibold rounded-xl border-2 border-gray-200 hover:border-blue-500 hover:shadow-lg transition-all duration-300 inline-flex items-center justify-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              View GitHub
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
