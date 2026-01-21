@@ -7,7 +7,7 @@ import ReactLenis from "lenis/react";
 // Your project data with percentage
 const projects = [
 { title: "CSS", src: "/images/css.png", description: "Used for styling and designing visually appealing, responsive web pages.", percentage: 90 },
-  { title: "Express.js", src: "/images/express.png", description: "A lightweight Node.js framework for building fast and scalable backend APIs.", percentage: 85 },
+  { title: "Express.js", src: "/images/express.png", description: "A lightweight Node.js framework for building fast and scalable backend APIs.", percentage: 75 },
   { title: "Framer Motion", src: "/images/framer.png", description: "A React animation library for creating smooth and interactive UI motion effects.", percentage: 60 },
   { title: "HTML5", src: "/images/html.png", description: "The standard markup language for creating the structure of web pages.", percentage: 95 },
   { title: "JavaScript", src: "/images/js.png", description: "The core programming language of the web used for dynamic and interactive websites.", percentage: 85 },

@@ -15,6 +15,7 @@ function App() {
       <Skill />
       <Skiper />
       <Contact />
+      <Project
     </Suspense>
   )
 }

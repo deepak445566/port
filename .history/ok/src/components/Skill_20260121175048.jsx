@@ -7,15 +7,15 @@ import ReactLenis from "lenis/react";
 // Your project data with percentage
 const projects = [
 { title: "CSS", src: "/images/css.png", description: "Used for styling and designing visually appealing, responsive web pages.", percentage: 90 },
-  { title: "Express.js", src: "/images/express.png", description: "A lightweight Node.js framework for building fast and scalable backend APIs.", percentage: 85 },
+  { title: "Express.js", src: "/images/express.png", description: "A lightweight Node.js framework for building fast and scalable backend APIs.", percentage: 75 },
   { title: "Framer Motion", src: "/images/framer.png", description: "A React animation library for creating smooth and interactive UI motion effects.", percentage: 60 },
   { title: "HTML5", src: "/images/html.png", description: "The standard markup language for creating the structure of web pages.", percentage: 95 },
   { title: "JavaScript", src: "/images/js.png", description: "The core programming language of the web used for dynamic and interactive websites.", percentage: 85 },
-  { title: "MongoDB", src: "/images/mongodb.png", description: "A NoSQL database used to store data in flexible, JSON-like documents.", percentage: 80 },
+  { title: "MongoDB", src: "/images/mongodb.png", description: "A NoSQL database used to store data in flexible, JSON-like documents.", percentage: 70 },
   { title: "MySQL", src: "/images/mysql.png", description: "A reliable relational database management system for structured data storage.", percentage: 65 },
   { title: "Node.js", src: "/images/node.png", description: "A JavaScript runtime used to build scalable backend and server-side applications.", percentage: 80 },
   { title: "React.js", src: "/images/react.png", description: "A popular JavaScript library for building fast, reusable, and dynamic user interfaces.", percentage: 92 },
-  { title: "Redux", src: "/images/redux.png", description: "A predictable state management library for maintaining data flow in large React apps.", percentage: 88 },
+  { title: "Redux", src: "/images/redux.png", description: "A predictable state management library for maintaining data flow in large React apps.", percentage: 78 },
   { title: "Tailwind CSS", src: "/images/tailwind.png", description: "A utility-first CSS framework for building modern, responsive designs quickly.", percentage: 98 },
  {
   title: "Next.js",

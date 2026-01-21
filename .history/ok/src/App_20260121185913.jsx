@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from 'react'
+import ProjectProcess from './components/ProjectProcess'
 
 // Lazy loaded components
 const Home = lazy(() => import('./components/Home'))
@@ -15,6 +16,7 @@ function App() {
       <Skill />
       <Skiper />
       <Contact />
+      <ProjectProcess/>
     </Suspense>
   )
 }
