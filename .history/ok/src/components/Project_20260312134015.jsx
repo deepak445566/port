@@ -209,7 +209,7 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Hover Arrow - Desktop only */}
         <div className="hidden lg:block absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
+          <div className="w-10 h-40 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
             <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
@@ -225,7 +225,7 @@ const DesktopProjectPair = ({ i, pair, progress, range, targetScale }) => {
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div className="sticky -top-[10vh] lg:-top-80 flex items-center justify-center">
+    <div className="sticky -top-[10vh] lg:-top-50 flex items-center justify-center">
       <motion.div
         style={{ scale, top: `calc(-5vh + ${i * 20 + 250}px)` }}
         className="relative -top-1/4 origin-top flex rounded-2xl 

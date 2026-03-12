@@ -225,7 +225,7 @@ const DesktopProjectPair = ({ i, pair, progress, range, targetScale }) => {
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div className="sticky -top-[10vh] lg:-top-80 flex items-center justify-center">
+    <div className="sticky -top-[0vh] lg:-top-50 flex items-center justify-center">
       <motion.div
         style={{ scale, top: `calc(-5vh + ${i * 20 + 250}px)` }}
         className="relative -top-1/4 origin-top flex rounded-2xl 
