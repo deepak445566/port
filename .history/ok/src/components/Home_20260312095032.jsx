@@ -132,7 +132,7 @@ function Home() {
           <div className="mid2 w-full lg:h-[30%] flex  ">
  <div className='  w-full py-2  lg:py-4 '><h1 className='text-4xl md:text-6xl lg:text-[100px] xl:text-[120px] big font-semibold text-center text-[#6BD3C7] uppercase'>Web Solutions from</h1></div>
           </div>
-          <div className="mid3 w-full h-[30%]  flex lg:items-end md:leading-12  xl:leading-6  text-center ">
+          <div className="mid3 w-full h-[30%]  flex lg:items-end leading-12  text-center ">
  <div className=' w-full  '><h1 className='text-4xl md:text-6xl lg:text-[100px] xl:text-[120px] big font-semibold text-center uppercase'>Frontend to Backend</h1>
  <br></br>
  <h3 className='big font-light! text-xl'> 🧑‍💻Dreamed by You - Designed by Us ⚡</h3></div>

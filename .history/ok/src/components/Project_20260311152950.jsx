@@ -27,25 +27,7 @@ const allProjects = [
   progress: 100
 }
 ,
-   {
-  id: 2,
-  title: "FloraWing Business Website",
-  description: "Modern responsive business website built for FloraWing with smooth UI, service sections, and contact features.",
-  image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1139&q=80",
-  technologies: ["React", "Tailwind CSS", "JavaScript", "Vite"],
-  features: [
-    "Responsive Design",
-    "Modern UI/UX",
-    "Service Showcase",
-    "Contact Section"
-  ],
-  category: "frontend",
-  liveUrl: "https://florawing.com/",
-  githubUrl: "#",
-  status: "Live",
-  rating: 4.8,
-  progress: 100
-},
+   
    {
   id: 3,
   title: "Balloon Decor",
@@ -95,72 +77,27 @@ const allProjects = [
       rating: 4.6,
       progress: 100
     },
-   {
-  id: 6,
-  title: "Creation Empire MERN Business Website",
-  description: "Full-stack business website built using the MERN stack with dynamic content management, responsive UI, and modern service showcase.",
-  image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80",
-  technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
-  features: [
-    "Admin Dashboard",
-    "Dynamic Content Management",
-    "Responsive Design",
-    "Service & Portfolio Sections",
-    "Contact Form with Backend Integration"
-  ],
-  category: "mern",
-  liveUrl: "https://www.creationempire.in/",
-  githubUrl: "#",
-  status: "Live",
-  rating: 4.7,
-  progress: 100
-},
-{
-  id: 7,
-  title: "NGO Awareness Website",
-  description: "Responsive NGO website designed to showcase social initiatives, mission, and programs while allowing users to learn, connect, and support the cause.",
-  image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1139&q=80",
-  technologies: ["React", "Tailwind CSS", "JavaScript", "Vite"],
-  features: [
-    "Responsive Design",
-    "NGO Mission & Vision Section",
-    "Programs & Initiatives Showcase",
-    "Contact & Support Section"
-  ],
-  category: "frontend",
-  liveUrl: "https://resilient-clafoutis-7bd1b2.netlify.app/",
-  githubUrl: "#",
-  status: "Live",
-  rating: 4.6,
-  progress: 100
-},
-{
-  id: 8,
-  title: "Balaji Ingenieria Private Limited Website",
-  description: "Professional business website developed for Balaji Ingenieria Private Limited to showcase engineering services, company profile, and contact details with a modern responsive design.",
-  image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1139&q=80",
-  technologies: ["React", "Tailwind CSS", "JavaScript", "Vite"],
-  features: [
-    "Responsive Design",
-    "Company Profile Section",
-    "Engineering Services Showcase",
-    "Contact Form & Business Details"
-  ],
-  category: "frontend",
-  liveUrl: "https://incredible-cobbler-cefaad.netlify.app/",
-  githubUrl: "#",
-  status: "Live",
-  rating: 4.6,
-  progress: 100
-}
+    {
+      id: 6,
+      title: "Portfolio Showcase",
+      description: "Modern portfolio with dark/light mode, animations, and project case studies.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1115&q=80",
+      technologies: ["Next.js", "Tailwind", "Framer Motion", "Three.js"],
+      features: ["Dark/Light Mode", "Smooth Animations", "Case Studies", "Contact Form"],
+      category: "design",
+      liveUrl: "#",
+      githubUrl: "#",
+      status: "Under Development",
+      rating: 4.4,
+      progress: 70
+    }
   ];
 
 // Desktop के लिए pairs में group करें (optional)
 const desktopProjectPairs = [
   { id: 1, left: allProjects[0], right: allProjects[1] },
   { id: 2, left: allProjects[2], right: allProjects[3] },
-  { id: 3, left: allProjects[4], right: allProjects[5] },
-   { id: 3, left: allProjects[6], right: allProjects[7] }
+  { id: 3, left: allProjects[4], right: allProjects[5] }
 ];
 
 // Single Project Card Component

@@ -133,25 +133,6 @@ const allProjects = [
   status: "Live",
   rating: 4.6,
   progress: 100
-},
-{
-  id: 8,
-  title: "Balaji Ingenieria Private Limited Website",
-  description: "Professional business website developed for Balaji Ingenieria Private Limited to showcase engineering services, company profile, and contact details with a modern responsive design.",
-  image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1139&q=80",
-  technologies: ["React", "Tailwind CSS", "JavaScript", "Vite"],
-  features: [
-    "Responsive Design",
-    "Company Profile Section",
-    "Engineering Services Showcase",
-    "Contact Form & Business Details"
-  ],
-  category: "frontend",
-  liveUrl: "https://incredible-cobbler-cefaad.netlify.app/",
-  githubUrl: "#",
-  status: "Live",
-  rating: 4.6,
-  progress: 100
 }
   ];
 
@@ -159,7 +140,7 @@ const allProjects = [
 const desktopProjectPairs = [
   { id: 1, left: allProjects[0], right: allProjects[1] },
   { id: 2, left: allProjects[2], right: allProjects[3] },
-  { id: 3, left: allProjects[4], right: allProjects[5] },
+  { id: 3, left: allProjects[4], right: allProjects[5] }
    { id: 3, left: allProjects[6], right: allProjects[7] }
 ];
 
